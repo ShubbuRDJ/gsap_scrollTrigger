@@ -11,7 +11,7 @@ allCards.forEach((element, index) => {
       scrub: true,
       pinSpacing: false,
       start: `top ${40 + (20 * index)}px`,
-      // end: `${696 * (countOfCards - index) - (745 + (15*index))}px`,
+      end: `${696 * (countOfCards - index) - (745 + (15*index))}px`,
     },
     scrollY: `-${696 * index}px`,
   })
