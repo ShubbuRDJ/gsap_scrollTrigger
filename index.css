@@ -6,10 +6,15 @@ html {
   font-size: 16px;
 }
 
+body {
+  background-color: black;
+  color: #fff;
+}
+
 .main-container {
   height: auto;
   padding: 0 120px;
-  background-color: #fff;
+  background-color: black;
 }
 
 .top-text {
@@ -104,4 +109,77 @@ html {
   font-size: 0.75rem;
   font-weight: 600;
   color: #fff;
+}
+
+.parallelXImage-container {
+  height: 530px;
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  /* padding: 0 120px; */
+}
+
+.parallelXImage-container .parallelXImage-left-part {
+  height: 100%;
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+}
+.parallelXImage-container .parallelXImage-left-part .left-part-btn {
+  height: 3rem;
+  width: 12rem;
+  background-color: transparent;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.parallelXImage-container .parallelXImage-left-part .left-part-btn:hover {
+  background-color: #1468fb;
+  border: 2px solid #1468fb;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.parallelXImage-container .parallelXImage-left-part .left-part-btn svg {
+  fill: #fff;
+}
+
+.parallelXImage-container .parallelXImage-right-part {
+  height: 100%;
+  width: calc(100% - 370px);
+  max-width: 887px;
+  overflow-y: auto;
+}
+.parallelXImage-container
+  .parallelXImage-right-part
+  .parallelXImage-image-container {
+  height: 100%;
+  width: 95.5%;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  background: rgb(255 255 255/50%);
+  border-radius: 100px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #116bfb;
+}
+
+.parallelXImage-container
+  .parallelXImage-right-part
+  .parallelXImage-image-container
+  img {
+  width: 100%;
+  height: 100%;
+  border-radius:10px;
 }
