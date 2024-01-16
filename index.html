@@ -1,227 +1,394 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
 
-<body>
+    <script>
+      if (history.scrollRestoration) {
+        history.scrollRestoration = "manual";
+      } else {
+        window.onbeforeunload = function () {
+          window.scrollTo(0, 0);
+        };
+      }
+    </script>
+  </head>
 
+  <body>
     <!-- navbat start  -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="/">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="/"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/">Action</a></li>
+                <li><a class="dropdown-item" href="/">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/">Action</a></li>
-                            <li><a class="dropdown-item" href="/">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="/">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
+          </form>
         </div>
+      </div>
     </nav>
     <!-- navbat end  -->
 
     <div class="main-container">
+      <section class="top-text mtb-100">
+        <h6>We dive into the essence of your brand</h6>
+        <h1>How we create your complete website</h1>
+        <p>
+          With the creation of a complete website , we offer you much more than
+          just an online presence; it’s your identity that comes to life. We are
+          here to ensure that your site is not only beautiful, but also a real
+          credibility machine.
+        </p>
+      </section>
 
+      <!-- <div class="card-wrapper"> -->
 
-        <section class="top-text mtb-100">
-            <h6>We dive into the essence of your brand</h6>
-            <h1>How we create your complete website</h1>
-            <p>With the creation of a complete website , we offer you much more than just an online presence; it’s your
-                identity that comes to life. We are here to ensure that your site is not only beautiful, but also a real
-                credibility machine.</p>
-        </section>
-
-        <div class="card-wrapper">
-
-            <section id="collapsible-container-1" class="collapsible-container" style="z-index: 1;">
-                <div class="phase">
-                    <span>PHASE&nbsp;&nbsp;1</span>
-                    <div class="frame">
-                        <span>Framing</span>
-                    </div>
-                </div>
-            </section>
-
-            <section id="collapsible-container-2" class="collapsible-container" style="z-index: 2;">
-                <div class="phase">
-                    <span>PHASE&nbsp;&nbsp;2</span>
-                    <div class="frame">
-                        <span>Framing</span>
-                    </div>
-                </div>
-            </section>
-
-            <section id="collapsible-container-3" class="collapsible-container" style="z-index: 3;">
-                <div class="phase">
-                    <span style="color: #FF6B00;">PHASE&nbsp;&nbsp;3</span>
-                    <div class="frame" style="background-color: #FF6B00;">
-                        <span>Framing</span>
-                    </div>
-                </div>
-            </section>
-
-            <section id="collapsible-container-4" class="collapsible-container" style="z-index: 4;">
-                <div class="phase">
-                    <span style="color: #FF6B00;">PHASE&nbsp;&nbsp;4</span>
-                    <div class="frame" style="background-color: #FF6B00;">
-                        <span>Framing</span>
-                    </div>
-                </div>
-            </section>
-
-            <section id="collapsible-container-5" class="collapsible-container" style="z-index: 5;">
-                <div class="phase">
-                    <span style="color: #3BBAB2;">PHASE&nbsp;&nbsp;5</span>
-                    <div class="frame" style="background-color: #3BBAB2">
-                        <span>Framing</span>
-                    </div>
-                </div>
-            </section>
-
-            <section id="collapsible-container-6" class="collapsible-container" style="z-index: 6;">
-                <div class="phase">
-                    <span style="color: #3BBAB2;">PHASE&nbsp;&nbsp;6</span>
-                    <div class="frame" style="background-color: #3BBAB2">
-                        <span>Framing</span>
-                    </div>
-                </div>
-            </section>
-
+      <section
+        id="collapsible-container-1"
+        class="collapsible-container"
+        style="z-index: 1"
+      >
+        <div class="phase">
+          <span>PHASE&nbsp;&nbsp;1</span>
+          <div class="frame">
+            <span>Framing</span>
+          </div>
         </div>
+      </section>
 
+      <section
+        id="collapsible-container-2"
+        class="collapsible-container"
+        style="z-index: 2"
+      >
+        <div class="phase">
+          <span>PHASE&nbsp;&nbsp;2</span>
+          <div class="frame">
+            <span>Framing</span>
+          </div>
+        </div>
+      </section>
 
+      <section
+        id="collapsible-container-3"
+        class="collapsible-container"
+        style="z-index: 3"
+      >
+        <div class="phase">
+          <span style="color: #ff6b00">PHASE&nbsp;&nbsp;3</span>
+          <div class="frame" style="background-color: #ff6b00">
+            <span>Framing</span>
+          </div>
+        </div>
+      </section>
 
-        <section class="bottom-text mtb-140">
-            <h6>We dive into the essence of your brand</h6>
-            <h1>How we create your complete website</h1>
-            <p>With the creation of a complete website , we offer you much more than just an online presence; it’s your
-                identity that comes to life. We are here to ensure that your site is not only beautiful, but also a real
-                credibility machine.</p>
-        </section>
-        <section class="bottom-text mtb-140">
-            <h6>We dive into the essence of your brand</h6>
-            <h1>How we create your complete website</h1>
-            <p>With the creation of a complete website , we offer you much more than just an online presence; it’s your
-                identity that comes to life. We are here to ensure that your site is not only beautiful, but also a real
-                credibility machine.</p>
-        </section>
-        <section class="bottom-text mtb-140">
-            <h6>We dive into the essence of your brand</h6>
-            <h1>How we create your complete website</h1>
-            <p>With the creation of a complete website , we offer you much more than just an online presence; it’s your
-                identity that comes to life. We are here to ensure that your site is not only beautiful, but also a real
-                credibility machine.</p>
-        </section>
-        <section class="bottom-text mtb-140">
-            <h6>We dive into the essence of your brand</h6>
-            <h1>How we create your complete website</h1>
-            <p>With the creation of a complete website , we offer you much more than just an online presence; it’s your
-                identity that comes to life. We are here to ensure that your site is not only beautiful, but also a real
-                credibility machine.</p>
-        </section>
+      <section
+        id="collapsible-container-4"
+        class="collapsible-container"
+        style="z-index: 4"
+      >
+        <div class="phase">
+          <span style="color: #ff6b00">PHASE&nbsp;&nbsp;4</span>
+          <div class="frame" style="background-color: #ff6b00">
+            <span>Framing</span>
+          </div>
+        </div>
+      </section>
 
+      <section
+        id="collapsible-container-5"
+        class="collapsible-container"
+        style="z-index: 5"
+      >
+        <div class="phase">
+          <span style="color: #3bbab2">PHASE&nbsp;&nbsp;5</span>
+          <div class="frame" style="background-color: #3bbab2">
+            <span>Framing</span>
+          </div>
+        </div>
+      </section>
 
-        <section class="parallelXImage-container mtb-140">
-            <div class="parallelXImage-left-part">
-                <span style="color: #1468fb;">Case Study</span>
-                <h2>IKEA</h2>
-                <p>Expands as a digital consumer experience leader</p>
-                <div class="left-part-btn">
-                    <span>View Case Study</span>
-                    <svg width="13px" height="10px" viewBox="0 0 13 10"> <polyline points="8 1 12 5 8 9"></polyline> </svg>
-                </div>
-            </div>
-            <div class="parallelXImage-right-part">
-                <div class="parallelXImage-image-container">
-                    <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/showcase-ikea.webp" alt="pic"/>
-                    <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/showcase-pizzahut.webp" alt="pic"/>
-                    <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/showcase-adidas.webp" alt="pic"/>
-                </div>
-            </div>
-        </section>
+      <section
+        id="collapsible-container-6"
+        class="collapsible-container"
+        style="z-index: 6"
+      >
+        <div class="phase">
+          <span style="color: #3bbab2">PHASE&nbsp;&nbsp;6</span>
+          <div class="frame" style="background-color: #3bbab2">
+            <span>Framing</span>
+          </div>
+        </div>
+      </section>
 
-        <section class="bottom-text mtb-140">
-            <h6>We dive into the essence of your brand</h6>
-            <h1>How we create your complete website</h1>
-            <p>With the creation of a complete website , we offer you much more than just an online presence; it’s your
-                identity that comes to life. We are here to ensure that your site is not only beautiful, but also a real
-                credibility machine.</p>
-        </section>
-        <section class="bottom-text mtb-140">
-            <h6>We dive into the essence of your brand</h6>
-            <h1>How we create your complete website</h1>
-            <p>With the creation of a complete website , we offer you much more than just an online presence; it’s your
-                identity that comes to life. We are here to ensure that your site is not only beautiful, but also a real
-                credibility machine.</p>
-        </section>
-        <section class="bottom-text mtb-140">
-            <h6>We dive into the essence of your brand</h6>
-            <h1>How we create your complete website</h1>
-            <p>With the creation of a complete website , we offer you much more than just an online presence; it’s your
-                identity that comes to life. We are here to ensure that your site is not only beautiful, but also a real
-                credibility machine.</p>
-        </section>
-        <section class="bottom-text mtb-140">
-            <h6>We dive into the essence of your brand</h6>
-            <h1>How we create your complete website</h1>
-            <p>With the creation of a complete website , we offer you much more than just an online presence; it’s your
-                identity that comes to life. We are here to ensure that your site is not only beautiful, but also a real
-                credibility machine.</p>
-        </section>
+      <!-- </div> -->
 
+      <section class="bottom-text mtb-140">
+        <h6>We dive into the essence of your brand</h6>
+        <h1>How we create your complete website</h1>
+        <p>
+          With the creation of a complete website , we offer you much more than
+          just an online presence; it’s your identity that comes to life. We are
+          here to ensure that your site is not only beautiful, but also a real
+          credibility machine.
+        </p>
+      </section>
+      <section class="bottom-text mtb-140">
+        <h6>We dive into the essence of your brand</h6>
+        <h1>How we create your complete website</h1>
+        <p>
+          With the creation of a complete website , we offer you much more than
+          just an online presence; it’s your identity that comes to life. We are
+          here to ensure that your site is not only beautiful, but also a real
+          credibility machine.
+        </p>
+      </section>
+      <section class="bottom-text mtb-140">
+        <h6>We dive into the essence of your brand</h6>
+        <h1>How we create your complete website</h1>
+        <p>
+          With the creation of a complete website , we offer you much more than
+          just an online presence; it’s your identity that comes to life. We are
+          here to ensure that your site is not only beautiful, but also a real
+          credibility machine.
+        </p>
+      </section>
+      <section class="bottom-text mtb-140">
+        <h6>We dive into the essence of your brand</h6>
+        <h1>How we create your complete website</h1>
+        <p>
+          With the creation of a complete website , we offer you much more than
+          just an online presence; it’s your identity that comes to life. We are
+          here to ensure that your site is not only beautiful, but also a real
+          credibility machine.
+        </p>
+      </section>
 
+      <section class="parallelXImage-container">
+        <div
+          id="image-card-con-parallelXImage-container-1"
+          class="image-card-con-parallelXImage-container"
+          style="background-color: rgb(0, 255, 26)"
+        ></div>
+        <div
+          id="image-card-con-parallelXImage-container-2"
+          class="image-card-con-parallelXImage-container"
+          style="background-color: #ff6b00"
+        ></div>
+        <div
+          id="image-card-con-parallelXImage-container-3"
+          class="image-card-con-parallelXImage-container"
+          style="background-color: #3bbab2"
+        ></div>
+        <div
+          id="image-card-con-parallelXImage-container-4"
+          class="image-card-con-parallelXImage-container"
+          style="background-color: #3b3bba"
+        ></div>
+      </section>
+
+      <section class="bottom-text mtb-140">
+        <h6>We dive into the essence of your brand</h6>
+        <h1>How we create your complete website</h1>
+        <p>
+          With the creation of a complete website , we offer you much more than
+          just an online presence; it’s your identity that comes to life. We are
+          here to ensure that your site is not only beautiful, but also a real
+          credibility machine.
+        </p>
+      </section>
+      <section class="bottom-text mtb-140">
+        <h6>We dive into the essence of your brand</h6>
+        <h1>How we create your complete website</h1>
+        <p>
+          With the creation of a complete website , we offer you much more than
+          just an online presence; it’s your identity that comes to life. We are
+          here to ensure that your site is not only beautiful, but also a real
+          credibility machine.
+        </p>
+      </section>
+      <section class="bottom-text mtb-140">
+        <h6>We dive into the essence of your brand</h6>
+        <h1>How we create your complete website</h1>
+        <p>
+          With the creation of a complete website , we offer you much more than
+          just an online presence; it’s your identity that comes to life. We are
+          here to ensure that your site is not only beautiful, but also a real
+          credibility machine.
+        </p>
+      </section>
+      <section class="bottom-text mtb-140">
+        <h6>We dive into the essence of your brand</h6>
+        <h1>How we create your complete website</h1>
+        <p>
+          With the creation of a complete website , we offer you much more than
+          just an online presence; it’s your identity that comes to life. We are
+          here to ensure that your site is not only beautiful, but also a real
+          credibility machine.
+        </p>
+      </section>
+      <section class="bottom-text mtb-140">
+        <h6>We dive into the essence of your brand</h6>
+        <h1>How we create your complete website</h1>
+        <p>
+          With the creation of a complete website , we offer you much more than
+          just an online presence; it’s your identity that comes to life. We are
+          here to ensure that your site is not only beautiful, but also a real
+          credibility machine.
+        </p>
+      </section>
+      <section class="bottom-text mtb-140">
+        <h6>We dive into the essence of your brand</h6>
+        <h1>How we create your complete website</h1>
+        <p>
+          With the creation of a complete website , we offer you much more than
+          just an online presence; it’s your identity that comes to life. We are
+          here to ensure that your site is not only beautiful, but also a real
+          credibility machine.
+        </p>
+      </section>
+      <section class="bottom-text mtb-140">
+        <h6>We dive into the essence of your brand</h6>
+        <h1>How we create your complete website</h1>
+        <p>
+          With the creation of a complete website , we offer you much more than
+          just an online presence; it’s your identity that comes to life. We are
+          here to ensure that your site is not only beautiful, but also a real
+          credibility machine.
+        </p>
+      </section>
+
+      <!-- carousel start  -->
+
+      <div class="carousel-container">
+        <div class="carousel-wrapper">
+          <div class="carousel">
+            <!-- Your carousel items here -->
+            <div class="carousel-item">1</div>
+            <div class="carousel-item">2</div>
+            <div class="carousel-item">3</div>
+            <div class="carousel-item">4</div>
+            <div class="carousel-item">5</div>
+            <!-- Repeat items for looping -->
+          </div>
+        </div>
+        <button class="prev-button">Prev</button>
+        <button class="next-button">Next</button>
+      </div>
+
+      <!-- carousel end  -->
+
+      <section class="bottom-text mtb-140">
+        <h6>We dive into the essence of your brand</h6>
+        <h1>How we create your complete website</h1>
+        <p>
+          With the creation of a complete website , we offer you much more than
+          just an online presence; it’s your identity that comes to life. We are
+          here to ensure that your site is not only beautiful, but also a real
+          credibility machine.
+        </p>
+      </section>
+      <section class="bottom-text mtb-140">
+        <h6>We dive into the essence of your brand</h6>
+        <h1>How we create your complete website</h1>
+        <p>
+          With the creation of a complete website , we offer you much more than
+          just an online presence; it’s your identity that comes to life. We are
+          here to ensure that your site is not only beautiful, but also a real
+          credibility machine.
+        </p>
+      </section>
+      <section class="bottom-text mtb-140">
+        <h6>We dive into the essence of your brand</h6>
+        <h1>How we create your complete website</h1>
+        <p>
+          With the creation of a complete website , we offer you much more than
+          just an online presence; it’s your identity that comes to life. We are
+          here to ensure that your site is not only beautiful, but also a real
+          credibility machine.
+        </p>
+      </section>
+      <section class="bottom-text mtb-140">
+        <h6>We dive into the essence of your brand</h6>
+        <h1>How we create your complete website</h1>
+        <p>
+          With the creation of a complete website , we offer you much more than
+          just an online presence; it’s your identity that comes to life. We are
+          here to ensure that your site is not only beautiful, but also a real
+          credibility machine.
+        </p>
+      </section>
     </div>
 
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Add these scripts to include GSAP and ScrollTrigger -->
     <script src="gsap.min.js"></script>
     <script src="scrollTrigger.min.js"></script>
 
-
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>
