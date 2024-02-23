@@ -69,7 +69,9 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              <a style="cursor: pointer" id="language-switcher" class="nav-link"
+                >Change Language</a
+              >
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -296,6 +298,7 @@
           credibility machine.
         </p>
       </section>
+
       <section class="bottom-text mtb-140">
         <h6>We dive into the essence of your brand</h6>
         <h1>How we create your complete website</h1>
@@ -379,11 +382,20 @@
       </section>
     </div>
 
+    <div id="google_translate_element"></div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+
+    <!-- <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script >
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+      }
+      </script> -->
 
     <!-- Add these scripts to include GSAP and ScrollTrigger -->
     <script src="gsap.min.js"></script>
